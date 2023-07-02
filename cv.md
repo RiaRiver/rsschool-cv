@@ -78,9 +78,51 @@ const areBracketsBalanced = (str) => {
 export default areBracketsBalanced;
 ```
 
+---
+
+## Experience
+
+_Fitness Club **"Leto"**_
+
+> This site is an intermediate level diplom project of the GLO Academy "WebStart" course. I implemented the entire site: layout, style and interactive.
+
+[![Github:][github]](https://github.com/RiaRiver/WS-Leto)
+[![Web:][web]](https://riariver.github.io/WS-Leto)
+
+_Home renovation **"Relax Live"**_
+
+> This site is an advanced level diplom project of the GLO Academy "JavaScript" course. I implemented the entire interactive in plain JavaScript.
+
+[![Github:][github]](https://github.com/RiaRiver/JS-Diplom)
+[![Web:][web]](https://riariver.github.io/JS-Diplom/)
+
+---
+
+## Education
+
+**"WebStart"** Glo Academy - April, 2020
+
+[![Ws sertificate:][ws-sert]](/img/GLO-WebStart-sert.png)
+
+**"JavaScript"** Glo Academy - October, 2020
+
+[![Ws sertificate:][js-sert]](/img/GLO-JavaScript-sert.png)
+
+---
+
+## English
+
+- A1 (Speaking, Writing)
+- A2 (Reading, Listening)
+
+  My level is enough to read technical articles and watch technical videos. Also I can easily work with documentation. But my speaking skills are poor.
+
 [photo]: /img/photo.jpg
 [mail]: /img/mail.png
 [phone]: /img/phone.png
 [discord]: /img/discord.png
 [telegram]: /img/telegram.png
 [github]: /img/github.png
+[ws-sert]: /img/GLO-WebStart-sert-preview.png
+[js-sert]: /img/GLO-JavaScript-sert-preview.png
+[web]: /img/web.png
