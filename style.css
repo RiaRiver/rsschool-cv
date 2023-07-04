@@ -31,6 +31,10 @@ body {
   margin: 0 auto;
 }
 
+p {
+  margin-bottom: 16px;
+}
+
 ul {
   list-style: none;
 }
@@ -154,6 +158,38 @@ a {
   padding: 24px 0;
 }
 
+.main__container {
+  display: grid;
+  gap: 36px 48px;
+  grid-template-columns: auto 30%;
+  grid-template-areas:
+    'about skills'
+    'exp skills'
+    'edu skills'
+    'code lang'
+    'code lang';
+}
+
+.about {
+  grid-area: about;
+}
+
+.section {
+  padding-top: 16px;
+}
+
+.section__title {
+  width: 60%;
+  margin-bottom: 24px;
+  padding: 3px 10px;
+  background-color: var(--dark);
+  color: var(--light);
+  text-shadow: 1px 1px 3px;
+  border-radius: 2px;
+  box-shadow: 4px 4px 12px 0px var(--primary),
+    inset -2px -2px 4px 0px var(--primary);
+}
+
 /* Footer */
 .footer__container {
   border-top: 4px solid var(--primary);
@@ -196,7 +232,6 @@ a {
 .loader span:nth-child(9) {
   animation-delay: 0.8s;
 }
-
 .loader span:nth-child(10) {
   animation-delay: 0.9s;
 }
