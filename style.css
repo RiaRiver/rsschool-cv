@@ -178,6 +178,10 @@ a {
   grid-area: edu;
 }
 
+.skills {
+  grid-area: skills;
+}
+
 .section {
   padding-top: 16px;
 }
@@ -194,11 +198,93 @@ a {
     inset -2px -2px 4px 0px var(--primary);
 }
 
+.section__title.--side {
+  margin-left: auto;
+  text-align: end;
+}
+
 /* Education */
 .education__list-item {
   margin-bottom: 16px;
   padding-left: 8px;
   border-left: 24px solid var(--secondary);
+}
+
+/* Skills */
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 8px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100px;
+  padding: 8px;
+  background-color: var(--dark);
+  border-radius: 5px;
+  box-shadow: 0 0px 5px 1px #fff9f9fa;
+}
+
+.skills__list .break {
+  height: 0;
+  flex-basis: 100%;
+}
+
+.skill.html::before {
+  content: url(assets/logo/html.svg);
+}
+.skill.css::before {
+  content: url(assets/logo/css.svg);
+}
+.skill.sass::before {
+  content: url(assets/logo/sass.svg);
+}
+
+.skill.js::before {
+  content: url(assets/logo/js.svg);
+}
+.skill.jquery::before {
+  content: url(assets/logo/jquery.svg);
+}
+.skill.bootstrap::before {
+  content: url(assets/logo/bootstrap.svg);
+}
+.skill.react::before {
+  content: url(assets/logo/react.svg);
+}
+.skill.mui::before {
+  content: url(assets/logo/mui.svg);
+}
+.skill.webpack::before {
+  content: url(assets/logo/webpack.svg);
+}
+.skill.gulp::before {
+  content: url(assets/logo/gulp.svg);
+}
+.skill.git::before {
+  content: url(assets/logo/git.svg);
+}
+.skill.github::before {
+  content: url(assets/logo/github.svg);
+}
+.skill.vscode::before {
+  content: url(assets/logo/vscode.svg);
+}
+.skill.webstorm::before {
+  content: url(assets/logo/webstorm.svg);
+}
+.skill.phpstorm::before {
+  content: url(assets/logo/phpstorm.svg);
+}
+.skill.npm::before {
+  content: url(assets/logo/npm.svg);
+}
+.skill.figma::before {
+  content: url(assets/logo/figma.svg);
 }
 
 /* Footer */
