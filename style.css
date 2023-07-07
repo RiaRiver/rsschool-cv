@@ -186,6 +186,10 @@ a {
   grid-area: exp;
 }
 
+.code {
+  grid-area: code;
+}
+
 .section {
   padding-top: 16px;
 }
@@ -336,6 +340,30 @@ a {
 }
 
 .project__link:hover {
+  color: var(--secondary);
+}
+
+/* Code */
+.code__block {
+  border-radius: 10px;
+}
+
+.code h3 {
+  width: fit-content;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.task {
+  margin-bottom: 16px;
+}
+.task ul {
+  padding: 16px;
+  margin-bottom: 16px;
+  list-style: square;
+}
+
+.task li::marker {
   color: var(--secondary);
 }
 

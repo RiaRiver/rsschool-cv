@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/dracula.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Valeriya Vorobyeva Frontend Developer</title>
 </head>
@@ -72,9 +73,9 @@
         <h2 class="section__title about__title">About me</h2>
         <p class="section__text about__text"> I am 36 years old. I have been studying frontend technologies since 2020. Unfortunately, there was a
           long break in studies due to family circumstances. I like learning programming and solving problems. My goal now is to get a strong
-          knowledge of the frontend and learn React and Angular. </p>
+          knowledge of the frontend and learn React and Angular.</p>
         <p class="section__text about__text"> I have some experience as an HTML/CSS/JS mentor on the GLO Academy’s “WebStart” course. I like to help
-          others with their studies and judging by the feedback from my students, I do it well. </p>
+          others with their studies and judging by the feedback from my students, I do it well.</p>
       </section>
       <!-- /.about -->
       <section id="experience" class="section experience">
@@ -87,7 +88,7 @@
                 <a href="https://github.com/RiaRiver/WS-Leto" class="project__link link" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://riariver.github.io/WS-Leto" class="project__link link" target="_blank"><i class="fa-solid fa-globe"></i></a>
               </div>
-              <p class="project__description"> This site is an intermediate level diplom project of the GLO Academy “WebStart” course.</p>
+              <p class="project__description"> This site is an intermediate level graduation project of the GLO Academy “WebStart” course.</p>
               <p>I implemented the entire site: layout, style and interactive.</p>
             </div>
             <!-- /.project__text -->
@@ -100,7 +101,7 @@
                 <a href="https://github.com/RiaRiver/JS-Diplom" class="project__link link" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://riariver.github.io/JS-Diplom/" class="project__link link" target="_blank"><i class="fa-solid fa-globe"></i></a>
               </div>
-              <p class="project__description"> This site is an advanced level diplom project of the GLO Academy “JavaScript” course.</p>
+              <p class="project__description"> This site is an advanced level graduation project of the GLO Academy “JavaScript” course.</p>
               <p>I implemented the entire interactive in plain JavaScript.</p>
             </div>
             <!-- /.project__text -->
@@ -148,6 +149,53 @@
         </ul>
       </section>
       <!-- /.skills -->
+      <section id="code" class="section code">
+        <h2 class="section__title code__title">My Code Example</h2>
+        <div class="code__task task">
+          <h3 class="task__title">Task areBracketsBalanced.js</h3>
+          <p class="task__description"> Implement and export a default function that accepts a string consisting only of opening and closing
+            parentheses as input and checks whether this string is correct. An empty string (absence of parentheses) is considered correct.</p>
+          <p class="task__description"> A string is considered correct (balanced) if the bracket structure contained in it meets the requirements:</p>
+          <ul class="task__requirements">
+            <li class="task__requirement"> Brackets are paired structures. </li>
+            <li class="task__requirement"> Each opening bracket must have a corresponding closing bracket. The closing bracket should not go ahead of
+              the opening one. </li>
+          </ul>
+          <pre style="tab-size: 2"><code class="code__block language-javascript">
+import areBracketsBalanced from "roundBracketsValidator';
+
+areBracketsBalanced('(())'); // true
+areBracketsBalanced('((())'); // false
+          </code></pre>
+        </div>
+        <!-- .task -->
+        <div class="code__solution solution">
+          <h3 class="solution__title">Solution</h3>
+          <pre style="tab-size: 2"><code class="code__block language-javascript">
+const areBracketsBalanced = (str) =&gt; {
+  if (str.length % 2 !== 0) {
+    return false;
+  }
+
+  let balance = 0;
+
+  for (let i = 0; i &lt; str.length; i += 1) {
+    const char = str[i];
+
+    balance += char === '(' ? 1 : -1;
+
+    if (balance &lt; 0) return false;
+  }
+
+  return balance === 0;
+};
+
+export default areBracketsBalanced;
+          </code></pre>
+        </div>
+        <!-- /.code__solution solution -->
+      </section>
+      <!-- /.code -->
     </div>
     <!-- /.container main__container -->
   </main>
@@ -158,6 +206,7 @@
   </footer>
   <script src="assets/js/jquery-3.7.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
