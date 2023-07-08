@@ -19,6 +19,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section:target,
+footer:target {
+  scroll-margin-top: 70px;
+}
+
 body {
   font-family: var(--fontPrimary);
   color: var(--light);
@@ -190,6 +195,10 @@ a {
   grid-area: code;
 }
 
+.languages {
+  grid-area: lang;
+}
+
 .section {
   padding-top: 16px;
 }
@@ -358,7 +367,7 @@ a {
   margin-bottom: 16px;
 }
 .task ul {
-  padding: 16px;
+  padding: 0px 16px;
   margin-bottom: 16px;
   list-style: square;
 }
@@ -367,9 +376,52 @@ a {
   color: var(--secondary);
 }
 
+/* Languages */
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  font-weight: bold;
+  list-style: square;
+  direction: rtl;
+}
+
+.languages__list-item span {
+  font-weight: normal;
+}
+
+.languages__list-item::marker {
+  color: var(--primary);
+}
+
 /* Footer */
 .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-top: 4px solid var(--primary);
+}
+
+.footer__link {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+  color: var(--light);
+  transition: 0.5s;
+}
+
+.footer__link:hover {
+  color: var(--primary);
+}
+
+.rsschool {
+  width: 200px;
+  transition: 0.5s;
+}
+.rsschool:hover {
+  fill: var(--primary);
+  stroke: var(--primary);
 }
 
 /* Animation */
